@@ -1,0 +1,129 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>dropdown Menu</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ :root {
+    --color-primary: #0073ff;
+    --color-white: #4b1902;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(51, 221, 156); 
+}
+
+.logo {
+    color: var(--color-black);
+    font-size: 30px;
+}
+
+.menu-bar {
+    background-color: var(--color-black);
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position:relative;
+}
+
+.menu-bar ul {
+    list-style:none;
+    display:inline-flex;
+}
+
+.menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 15px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: var(--color-primary);
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+/* dropdown menu style */
+
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+}
+
+    </style>
+    </head>
+    
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">IBM-Global Data Analytics</h1>
+            <ul>
+                <li><a href="file:///F:/web/dashboard.html" title="Data visualisation">Dashboard<i class="fas fa-caret-down"></i></a></li>
+                
+                <li><a href="file:///F:/web/Story.html" title="Story">Story<i class="fas fa-caret-down"></i></a>
+                </li>
+                <li><a href="file:///F:/web/Report.html" title="Report">Report<i class="fas fa-caret-down"></i></a>
+                </li>
+              
+                <li><a href="#">Accounts<i class="fas-fa-caret-down"></i></a>
+                </li>
+                
+            </ul>
+        </div>
+    
+    </body>
+    </html>
